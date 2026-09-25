@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <!-- Define o charser para UTF-8, para interpretar acentos e caracteres especiais. -->
+    <meta charset="UTF-8" />
+
+    <!-- Faz a página se adaptar à largura da tela do celular. 
+    Sem ela, o navegador mobile renderiza a página como se fosse desktop, bem pequena, 
+    e o usuário precisa dar zoom. É essencial para o site ser responsivo. -->
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title> Diego Lorenço - Analista de Sistemas </title>
+    
+    <!-- Resumo que aparece no resultado do Google -->
+    <meta name="description" content="Portfólio de Diego Lorenço: projetos pessoais, 10 anos de experiência em OutSystems e estudo de Java e Angular."/>   
+
+    <!-- Como o link aparece ao ser compartilhado no WhatsApp, LinkedIn, Facebook (Open Graph) -->
+    <meta property="og:title" content="Diego Lorenço - Analista de Sistemas">
+    <meta property="og:description" content="Projetos pessoais, 10 anos de experiência em OutSystems e estudo de Java e Angular.">
+    
+    <!--Preciso defininir uma imagem de capa-->
+    <meta property="og:image" content="https://meusite.com/img/capa.png"> 
+
+
+    
+    <!-- Importa as fontes. Ela carrega uma folha de estilo cuja URL diz exatamente o que você quer:
+
+    1 - family=Inter:wght@400;500;600: a fonte Inter nos pesos 400 (normal), 500 (médio) e 600 (semi-negrito).
+  
+    2 - family=Space+Grotesk:wght@500;600;700: a Space Grotesk nos pesos 500, 600 e 700 (negrito). O + representa o espaço no nome.
+  
+    3 -  display=swap: enquanto a fonte baixa, o texto aparece com uma fonte do sistema e depois é trocado. 
+         Isso evita que o texto fique invisível durante o carregamento.-->
+  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Importa o CSS que eu criei -->
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+    
+    <!-- Fundo da página -->
+    <div class="bg-ambient" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+ 
+    <div class="container">
+    
+    <!-- Navegação -->
+    
+    <nav class="nav">
+      <div class="nav-brand">
+        <div class="logo">DL</div>
+        <span>Diego Lorenço</span>
+      </div>
+      <div class="nav-links">
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#estudo">Estudo</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <a href="#contato" class="btn btn-outline btn-sm">Vamos conversar</a>
+    </nav>
+
+
+     <!-- main -->
+    <header class="main">
+      <div>
+        <div class="badge">
+          <span class="dot"></span> Fullstack · 10 anos em OutSystems
+        </div>
+        <h1>
+          Construindo produtos
+          <span class="gradient-text">do backend ao frontend</span>
+          com clareza.
+        </h1>
+        <p class="lead">
+          Desenvolvedor fullstack com uma década entregando aplicações corporativas em
+          OutSystems. Hoje aprofundo em <strong>Java</strong> no backend e
+          <strong>Angular</strong> no frontend.
+        </p>
+        <div class="main-actions">
+          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+          <a href="#contato" class="btn btn-outline">Fale comigo</a>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-value">10</div>
+            <div class="stat-label">anos dev</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">60+</div>
+            <div class="stat-label">apps OutSystems</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">2</div>
+            <div class="stat-label">stacks em estudo</div>
+          </div>
+        </div>
+      </div>
+      <div class="main-photo">
+        <img src="assets/portrait.jpg" alt="Diego Lorenço trabalhando em seu setup de desenvolvimento" />
+        <div class="main-photo-card">
+          <div class="card-label">Agora estudando</div>
+          <div class="card-value">Java · Angular</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- projetos -->
+    <section id="projetos">
+      <div class="section-head">
+        <h2>Projetos pessoais</h2>
+        <span class="section-note">Selecionados</span>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-img">
+            <img src="login-agv-eqt.png" alt="Tela de Boas-Vindas da Agência Virtual - Equatorial" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <h3>FinFlow</h3>
+            <p>Painel financeiro pessoal com gráficos interativos e sincronização em nuvem.</p>
+            <div class="tags">
+              <span class="tag tag-highlight">OutSystems ODC</span>
+            
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-img">
+            <img src="assets/project-tasknest.jpg" alt="Telas do TaskNest, gestor de tarefas" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <h3>TaskNest</h3>
+            <p>Gestor de tarefas com quadros kanban, tags e lembretes inteligentes offline-first.</p>
+            <div class="tags">
+              <span class="tag tag-highlight">TypeScript</span>
+              <span class="tag">Node</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-img">
+            <img src="assets/project-receita.jpg" alt="Interface do Receita Já, app de receitas" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <h3>Receita Já</h3>
+            <p>App de receitas que sugere pratos a partir dos ingredientes que você já tem.</p>
+            <div class="tags">
+              <span class="tag tag-highlight">Angular</span>
+              <span class="tag">Spring</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- experiência -->
+    <section id="experiencia" class="experience">
+      <div class="card intro-card">
+        <h2>Experiência</h2>
+        <p>
+          Uma década transformando processos complexos em aplicações OutSystems escaláveis,
+          com foco em arquitetura, integração e performance.
+        </p>
+        <div class="tags">
+          <span class="tag">OutSystems</span>
+          <span class="tag">Integrações REST</span>
+          <span class="tag">BPM</span>
+          <span class="tag">SQL Server</span>
+        </div>
+      </div>
+      <div class="experience-list">
+        <div class="card experience-item">
+          <div class="experience-head">
+            <h3>Dev. Fullstack Sênior · OutSystems</h3>
+            <span class="period">2015 — hoje</span>
+          </div>
+          <p>
+            Uma década entregando aplicações corporativas em OutSystems, do mapeamento de
+            requisitos ao deploy — arquitetura, integrações REST, BPM e performance.
+          </p>
+        </div>
+        <div class="card experience-item">
+          <div class="experience-head">
+            <h3>Backend com Java · em estudo</h3>
+            <span class="period">2024 — hoje</span>
+          </div>
+          <p>
+            Aprofundando Spring Boot, APIs REST, testes e persistência com JPA — migrando a
+            lógica de negócio para o ecossistema Java.
+          </p>
+        </div>
+        <div class="card experience-item">
+          <div class="experience-head">
+            <h3>Frontend com Angular · em estudo</h3>
+            <span class="period">2024 — hoje</span>
+          </div>
+          <p>
+            Construindo SPAs com componentes, RxJS e signals, aplicando boas práticas de
+            arquitetura de frontend.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- estudo -->
+    <section id="estudo">
+      <div class="section-head">
+        <h2>Áreas de estudo</h2>
+        <span class="section-note">Progresso atual</span>
+      </div>
+      <div class="study-grid">
+        <div class="card study-card">
+          <h3>Java &amp; Spring Boot</h3>
+          <div class="progress"><div class="progress-bar gradient-1" style="--target: 62%"></div></div>
+          <span class="study-detail">APIs REST · JPA · Testes · 62%</span>
+        </div>
+        <div class="card study-card">
+          <h3>Angular</h3>
+          <div class="progress"><div class="progress-bar gradient-2" style="--target: 48%"></div></div>
+          <span class="study-detail">Componentes · RxJS · Signals · 48%</span>
+        </div>
+        <div class="card study-card">
+          <h3>Arquitetura &amp; Cloud</h3>
+          <div class="progress"><div class="progress-bar gradient-3" style="--target: 30%"></div></div>
+          <span class="study-detail">Clean Arch · Docker · CI/CD · 30%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- contato -->
+    <section id="contato">
+      <div class="card contact-card">
+        <h2>Vamos construir algo juntos</h2>
+        <p>
+          Aberto a projetos fullstack, consultoria em OutSystems e colaborações com Java e
+          Angular.
+        </p>
+        <div class="main-actions contact-actions">
+          <a href="mailto:contato@diegolorenco.dev" class="btn btn-primary">dlorenco1@gmail.com</a>
+          <a href="#" class="btn btn-outline">LinkedIn</a>
+          <a href="#" class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2026 Diego Lorenço — Fullstack Developer</span>
+      <span>OutSystems · Java · Angular</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
