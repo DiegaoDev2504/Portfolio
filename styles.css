@@ -192,7 +192,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 1.25rem;
+  padding: 0.25rem 1rem;
   border: 1px solid var(--border);
   border-radius: 1rem;
   background: var(--card);
@@ -205,7 +205,7 @@ section {
   align-items: center;
   gap: 0.625rem;
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
@@ -457,6 +457,14 @@ section {
   font-size: 0.875rem;
   line-height: 1.7;
   color: var(--muted-foreground);
+}
+
+.intro-card .biografia{
+  color: var(--foreground);
+  font-size: 1.2rem;
+  text-align: justify;
+
+
 }
 
 .experience-list {
